@@ -1,0 +1,51 @@
+#Rozwiązania wybranych zadań:
+
+##1. *Używając lini poleceń utwórz strukturę katalogów.*
+
+        temp
+        -- dom
+        -- nauka
+          |-- c
+          |-- logo
+          `-- pascal
+        -- praca
+          |-- dokumenty
+          `-- zlecenia
+              |-- niezrealizowane
+              `-- zrealizowane
+
+
+    mkdir temp
+      cd temp
+
+    mkdir dom nauka praca
+      cd nauka
+        mkdir c logo pascal
+
+    cd ..
+      cd praca
+        mkdir dokumenty zlecenia
+          cd zlecenia
+            mkdir niezrealizowane zrealizowane
+
+
+###2. *przejdź do katalogu _dom_ i utwórz katalog _wazne-sprawy_*
+    
+     cd temp/dom/
+       mkdir wazne-sprawy
+
+####3. *wejdź do katalogu wazne-sprawy i utwórz tam pusty plik rachunki.txt.*
+
+    cd dom/wazne-sprawy/
+      touch rachunki.txt
+
+####4. *Będąc w katalogu wazne-sprawy skopiuj plik rachunki.txt do katalogu zrealizowane.*
+
+    cp rachunki.txt ~/temp/praca/zlecenia/zrealizowane/
+
+#####5. *Przejdź do katalogu zrealizowane i zmień nazwę pliku rachunki.txt na wykonano.txt.*
+
+    cd ~/temp/praca/zlecenia/zrealizowane/
+      mv rachunki.txt wykonano.txt
+
+
